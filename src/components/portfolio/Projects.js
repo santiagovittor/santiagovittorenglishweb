@@ -24,21 +24,22 @@ const Projects = () => {
         <div className={toggle ? "projectsContainer" : "projectsContainer__isDark"}>
             <Link to="/portfolio/thefootballstore"><div className="projectsContainer__box" data-aos="fade">
 
+
                 <img src={theFootballStore} alt="the football store website" />
-                <h1>The Football Store</h1>
+                <h2>The Football Store</h2>
             </div>
             </Link>
             <Link to="/portfolio/digitalkiki"><div className="projectsContainer__box" data-aos="fade">
 
                 <img src={digitalKiki} alt="digital kiki website" />
-                <h1>Digital Kiki</h1>
+                <h2>Digital Kiki</h2>
 
             </div>
             </Link>
             <div className="projectsContainer__box" data-aos="fade">
 
                 <img src={toggle ? portfolioDark : portfolio} alt="santiago vittor portfolio" />
-                <h1>Portfolio</h1>
+                <h2>Portfolio</h2>
 
             </div>
         </div>

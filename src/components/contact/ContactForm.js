@@ -3,22 +3,32 @@ import { db } from "../../firebase/firebaseConfig";
 import { addDoc, collection } from "@firebase/firestore";
 import { useState } from "react";
 import { ThemeContext } from "../../context/themeContext/ThemeContext";
-import { useContext } from "react";
-
+import { useEffect, useContext } from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import SocialMedia from "../socialMedia/SocialMedia";
 
 const ContactForm = () => {
 
     const [sentForm, setSentForm] = useState(false);
     const [messageId, setMessageId] = useState();
 
+    useEffect(()=>{
+        AOS.init({duration:2000})
+    },[])
+    
     const { toggle } = useContext(ThemeContext);
     const colRef = collection(db, 'mensajes')   
 
 
+
     return (  
         
-        <div className="contactContainer__form">
-                        <h1>CONTACT ME</h1>
+        <div className="contactContainer__form" data-aos="flip-left">
+                        <h1>CONTACTO</h1>
+                        <hr/>
+                        <SocialMedia />
+                        <hr/>
             <h4>
                 Si desea contactarme para colaborar en un proyecto o por alguna otra razón puede ponerse en contacto completando el formulario
             </h4>
@@ -132,13 +142,11 @@ const ContactForm = () => {
                             )} />
                             <div className="inputContainer__each">
                                 <label htmlFor="Description">Mensaje</label>
-                                <textarea
+                                <Field
                                     type="textarea"
                                     name="mensaje"
                                     id="mensaje"
-                                    rows="4"
                                     maxLength="100"
-                                    wrap="hard"
                                 />
                             </div>
                             <ErrorMessage name="mensaje" component={() => (

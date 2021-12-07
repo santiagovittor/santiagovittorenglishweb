@@ -3,12 +3,12 @@
     height: 100%;
     color: rgb(24, 24, 24);
     grid-template-columns: 1fr;
-    padding: 2.5rem;
     transition: 2s;
     & ul {
         display: grid;
         justify-content: center;
         text-align: center;
+        padding-top: 3rem;
         & li {
             height: 2rem;
             width: 2rem;
@@ -32,12 +32,12 @@
         color: white;
         position: sticky;
         grid-template-columns: 1fr;
-        padding: 2.5rem;
         transition: 2s;
         & ul {
             display: grid;
             justify-content: center;
             text-align: center;
+            padding-top: 3rem;
         }
         & li {
             height: 2rem;
@@ -66,7 +66,6 @@
         padding: 0;
         & ul {
             display: flex;
-            align-items: center;
             padding: 1rem 0 1rem 0;
             justify-content: space-around;
             width: 100%;
@@ -82,7 +81,6 @@
             padding: 0;
             & ul {
                 display: flex;
-                align-items: center;
                 padding: 1rem 0 1rem 0;
                 justify-content: space-around;
                 width: 100%;

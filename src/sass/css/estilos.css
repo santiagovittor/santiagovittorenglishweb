@@ -74,8 +74,6 @@ table {
 
 .mainTextContainer {
   display: grid;
-  width: 75%;
-  margin-left: 15%;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
@@ -90,9 +88,7 @@ table {
 .mainTextContainer__isDark {
   display: grid;
   justify-content: center;
-  width: 75%;
   color: white;
-  margin-left: 15%;
   font-family: "Rajdhani", sans-serif;
   align-items: center;
   text-align: center;
@@ -121,7 +117,6 @@ table {
   height: 100%;
   color: #181818;
   grid-template-columns: 1fr;
-  padding: 2.5rem;
   transition: 2s;
 }
 
@@ -129,6 +124,7 @@ table {
   display: grid;
   justify-content: center;
   text-align: center;
+  padding-top: 3rem;
 }
 
 .navBarContainer ul li {
@@ -157,7 +153,6 @@ table {
   color: white;
   position: sticky;
   grid-template-columns: 1fr;
-  padding: 2.5rem;
   transition: 2s;
 }
 
@@ -165,6 +160,7 @@ table {
   display: grid;
   justify-content: center;
   text-align: center;
+  padding-top: 3rem;
 }
 
 .navBarContainer__isDark li {
@@ -195,7 +191,6 @@ table {
   }
   .navBarContainer ul {
     display: flex;
-    align-items: center;
     padding: 1rem 0 1rem 0;
     justify-content: space-around;
     width: 100%;
@@ -212,7 +207,6 @@ table {
   }
   .navBarContainer__isDark ul {
     display: flex;
-    align-items: center;
     padding: 1rem 0 1rem 0;
     justify-content: space-around;
     width: 100%;
@@ -334,11 +328,25 @@ table {
   text-transform: uppercase;
 }
 
+#cv {
+  color: red;
+}
+
+#cv a {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 768px) {
   .profileCardContainer {
     grid-area: then;
     grid-template-columns: 1fr;
     padding: 3rem 0 0 0;
+  }
+  .profileCardContainer li {
+    list-style: none;
+    padding: 0 2rem;
   }
   .profileCardContainer p {
     padding: 0 1.5rem 1.5rem 1.5rem;
@@ -371,6 +379,13 @@ table {
   transition: 2s;
 }
 
+.projectsContainer h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 3rem;
+}
+
 .projectsContainer a {
   text-decoration: none;
   color: #181818;
@@ -384,23 +399,17 @@ table {
 }
 
 .projectsContainer__box img {
-  border-radius: 100%;
   width: 100%;
   height: 100%;
   opacity: 1;
+  filter: grayscale(1);
 }
 
 .projectsContainer__box img:hover {
   opacity: 0.75;
   box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
   filter: saturate(1.5);
-}
-
-.projectsContainer__box h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 3rem;
+  transition: 2s;
 }
 
 .projectsContainer__isDark {
@@ -414,19 +423,27 @@ table {
   transition: 2s;
 }
 
+.projectsContainer__isDark h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 3rem;
+}
+
 .projectsContainer__isDark a {
   text-decoration: none;
   color: white;
 }
 
-.projectsContainer__isDark img:hover {
-  box-shadow: 0px 12px 18px -6px #727171;
+.projectsContainer__isDark img {
+  filter: grayscale(1);
 }
 
-@media only screen and (max-width: 768px) {
-  .projectsContainer img, .projectsContainer__isDark img {
-    border-radius: 0%;
-  }
+.projectsContainer__isDark img:hover {
+  opacity: 0.75;
+  box-shadow: 0px 12px 18px -6px #727171;
+  filter: saturate(1.5);
+  transition: 2s;
 }
 
 .contactContainer {
@@ -439,9 +456,19 @@ table {
   transition: 2s;
 }
 
+.contactContainer button {
+  margin-top: 2rem;
+}
+
+.contactContainer hr {
+  color: #9e9e9e;
+  opacity: 0.5;
+  width: 75%;
+  height: 1px;
+}
+
 .contactContainer__form {
   display: grid;
-  width: 50%;
   padding: 3rem;
   margin-left: auto;
   margin-right: auto;
@@ -455,8 +482,12 @@ table {
 }
 
 .contactContainer__form h4 {
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 75%;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contactContainer__isDark {
@@ -470,12 +501,21 @@ table {
   transition: 2s;
 }
 
+.contactContainer__isDark button {
+  margin-top: 2rem;
+}
+
+.contactContainer__isDark hr {
+  color: #9e9e9e;
+  opacity: 0.5;
+  width: 75%;
+}
+
 .contactContainer__isDark__form {
   display: grid;
   padding: 3rem;
   margin-left: auto;
   margin-right: auto;
-  height: 50vh;
   line-height: 3rem;
   text-align: center;
 }
@@ -486,15 +526,14 @@ table {
 
 .contactContainer__isDark__form h4 {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .inputContainer {
   display: grid;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: bold;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .inputContainer__each input, .inputContainer__each textarea {
@@ -583,6 +622,10 @@ table {
   .contactContainer, .contactContainer__isDark {
     grid-area: then;
   }
+  .contactContainer h1, .contactContainer h4, .contactContainer__isDark h1, .contactContainer__isDark h4 {
+    width: 100%;
+    padding: 2rem 0 2rem 0;
+  }
   .inputContainer__each--error {
     padding-left: 0px;
   }
@@ -590,8 +633,8 @@ table {
 
 .socialMediaContainer {
   display: grid;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
 }
 
 .socialMediaContainer__each {
@@ -601,10 +644,10 @@ table {
 }
 
 .socialMediaContainer__each img {
-  display: grid;
-  align-self: center;
-  width: 4rem;
-  height: 4rem;
+  display: flex;
+  flex-flow: wrap row;
+  width: 2rem;
+  height: 2rem;
 }
 
 .socialMediaContainer__each img:hover {

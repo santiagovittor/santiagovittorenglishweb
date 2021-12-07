@@ -9,16 +9,16 @@ import { ThemeContext } from '../../context/themeContext/ThemeContext';
 
 const ProfileCard = () => {
 
-    const {toggle} = useContext(ThemeContext)
+    const {toggle} = useContext(ThemeContext);
 
 
     useEffect(() =>{
         AOS.init()
     },[]);
 
-    const [textOnDisplay,setTextOnDisplay] = useState(1)
-    const [isActualActive, setIsActualActive] = useState(true)
-    const [isObjetivosActive, setIsObjetivosActive] = useState(false)
+    const [textOnDisplay,setTextOnDisplay] = useState(1);
+    const [isActualActive, setIsActualActive] = useState(true);
+    const [isObjetivosActive, setIsObjetivosActive] = useState(false);
 
 
     const handleActual = () => {

@@ -10,8 +10,6 @@ import portfolio from '../../assets/svgs/portfolio.svg'
 import portfolioDark from '../../assets/svgs/portfolioDark.svg'
 import home from '../../assets/svgs/home.svg'
 import homeDark from '../../assets/svgs/homeDark.svg'
-import socialNetworks from '../../assets/svgs/socialNetworks.svg'
-import socialNetworksDark from '../../assets/svgs/socialNetworksDark.svg'
 
 
 import { NavLink } from "react-router-dom";
@@ -30,7 +28,6 @@ const NavBar = () => {
             <li>{toggle ? <NavLink to="/about-me"><img src={aboutMe} alt="about me icon" /></NavLink> :  <NavLink to="/about-me"><img src={aboutMeDark} alt="about me dark icon" /></NavLink>}</li>
             <li>{toggle ? <NavLink to="/"><img src={home} alt="home icon" /></NavLink> : <NavLink to="/"><img src={homeDark} alt="home dark icon" /></NavLink>}</li>
             <li>{toggle ? <NavLink to="/portfolio"><img src={portfolio} alt="portfolio icon" /></NavLink> : <NavLink to="/portfolio"><img src={portfolioDark} alt="portfolio dark icon" /></NavLink>}</li>
-            <li>{toggle ? <NavLink to="/social-media"><img src={socialNetworks} alt="social media icon" /></NavLink> : <NavLink to="/social-media"><img src={socialNetworksDark} alt="portfolio dark icon" /></NavLink>}</li>
             <li>{toggle ? <NavLink to="/contact-me"><img src={contact} alt="contact me icon" /></NavLink> : <NavLink to="/contact-me"><img src={contactDark} alt="contact me dark icon" /></NavLink>}</li>
         </ul>
     </div>

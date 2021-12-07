@@ -1,19 +1,28 @@
 import './sass/css/estilos.css'
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { useEffect } from 'react';
+import {  Route, Switch, useLocation } from "react-router-dom";
+import { ThemeProvider } from './context/themeContext/ThemeContext';
 import Layout from './components/landingPage/Layout';
 import MainText from './components/landingPage/MainText';
 import AboutMe from './components/aboutMe/AboutMe';
-import { ThemeProvider } from './context/themeContext/ThemeContext';
 import PortfolioHome from './components/portfolio/PortfolioHome';
 import DigitalKikiPage from './components/portfolio/DigitalKikiPage';
 import TheFootballStorePage from './components/portfolio/TheFootballStorePage';
 import Contact from './components/contact/Contact';
 import SocialMedia from './components/socialMedia/SocialMedia';
 
+
+
 function App() {
+
+  const location = useLocation();
+useEffect(() => {
+  window.scrollTo(0,0);
+}, [location]);
+
+
   return (
     <ThemeProvider>
-        <BrowserRouter>
         <Layout>
           <Switch>
             <Route path="/" component={MainText} exact />
@@ -25,7 +34,6 @@ function App() {
             <Route path="/contact-me" component={Contact} exact />
           </Switch>
           </Layout>
-        </BrowserRouter>
     </ThemeProvider>
 
   );

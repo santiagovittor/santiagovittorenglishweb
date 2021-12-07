@@ -1,7 +1,6 @@
 import linkedin from '../../assets/svgs/linkedin.svg'
 import whatsapp from '../../assets/svgs/whatsapp.svg'
 import facebook from '../../assets/svgs/facebook.svg'
-import twitter from '../../assets/svgs/twitter.svg'
 import github from '../../assets/svgs/github.svg'
 import gmail from '../../assets/svgs/gmail.svg'
 
@@ -32,12 +31,6 @@ const SocialMedia = () => {
             <div target="blank" className="socialMediaContainer__each">
                 <a href="mailto:svittordev@gmail.com"> 
                 <img src={gmail} alt="gmail icon"/>
-                </a>
-            </div>
-
-            <div target="blank" className="socialMediaContainer__each">
-                <a href="https://twitter.com/santivittor"> 
-                <img src={twitter} alt="twitter icon"/>
                 </a>
             </div>
         </section>
