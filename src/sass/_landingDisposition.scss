@@ -1,0 +1,65 @@
+.landingDisposition {
+    width: 100%;
+    min-height: 100vh;
+    color: rgb(24,24,24);
+    overflow-y: hidden;
+    display: grid;
+    font-family: "Rajdhani", sans-serif;
+    grid-template-columns: 6fr 1fr;
+    background-color: WHITE;
+    transition: 2s;
+    &__isDark {
+        width: 100%;
+        min-height: 100vh;
+        color: white;
+        overflow-y: hidden;
+        display: grid;
+        font-family: "Rajdhani", sans-serif;
+        grid-template-columns: 6fr 1fr;
+        background-color: rgb(24, 24, 24);
+        transition: 2s;
+    }
+}
+
+.mainTextContainer {
+    display: grid;
+    width: 75%;
+    margin-left: 15%;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 2s;
+    & h1 {
+        font-size: 5rem;
+    }
+    &__isDark {
+        display: grid;
+        justify-content: center;
+        width: 75%;
+        color: white;
+        margin-left: 15%;
+        font-family: "Rajdhani", sans-serif;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 2s;
+        & h1 {
+            font-size: 5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .landingDisposition,.landingDisposition__isDark {
+        grid-template-columns: 1fr;
+        overflow-y: visible;
+        grid-template-areas:
+            "navbar"
+            "then";
+    }
+    .mainTextContainer,
+    .mainTextContainer__isDark {
+        grid-area: then;
+    }
+}
