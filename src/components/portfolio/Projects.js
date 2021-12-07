@@ -24,7 +24,6 @@ const Projects = () => {
         <div className={toggle ? "projectsContainer" : "projectsContainer__isDark"}>
             <Link to="/portfolio/thefootballstore"><div className="projectsContainer__box" data-aos="fade">
 
-
                 <img src={theFootballStore} alt="the football store website" />
                 <h2>The Football Store</h2>
             </div>
