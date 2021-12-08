@@ -81,7 +81,6 @@
     &__each {
             & input {
                 margin-left: 2vh;
-                resize: none;
                 border: none;
                 border-bottom: 0.5vh solid rgb(158, 158, 158);
                 &:focus {
@@ -93,6 +92,25 @@
             label{
                 display: inline-block;
                 width: 80px;
+              }
+
+              &--isDark{
+                & input {
+                    margin-left: 2vh;
+                    background-color: transparent;
+                    color: white;
+                    border: none;
+                    border-bottom: 0.5vh solid rgb(158, 158, 158);
+                    &:focus {
+                        outline: none;
+                        border-bottom: 0.5vh solid white;
+                        transition: 0.2s;
+                    }                   
+                }
+                label{
+                    display: inline-block;
+                    width: 80px;
+                  }
               }
 
             &--error {

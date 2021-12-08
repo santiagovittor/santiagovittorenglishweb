@@ -74,8 +74,8 @@ table {
 
 .mainTextContainer {
   display: grid;
-  justify-content: center;
-  align-items: center;
+  grid-template-columns: 1fr;
+  place-content: center;
   text-transform: uppercase;
   text-align: center;
   transition: 2s;
@@ -108,8 +108,15 @@ table {
   }
   .mainTextContainer,
   .mainTextContainer__isDark {
-    margin-top: -10rem;
+    margin-top: -15rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
     grid-area: then;
+  }
+  .mainTextContainer h1,
+  .mainTextContainer__isDark h1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -558,7 +565,6 @@ table {
 
 .inputContainer__each input {
   margin-left: 2vh;
-  resize: none;
   border: none;
   border-bottom: 0.5vh solid #9e9e9e;
 }
@@ -570,6 +576,25 @@ table {
 }
 
 .inputContainer__each label {
+  display: inline-block;
+  width: 80px;
+}
+
+.inputContainer__each--isDark input {
+  margin-left: 2vh;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 0.5vh solid #9e9e9e;
+}
+
+.inputContainer__each--isDark input:focus {
+  outline: none;
+  border-bottom: 0.5vh solid white;
+  transition: 0.2s;
+}
+
+.inputContainer__each--isDark label {
   display: inline-block;
   width: 80px;
 }

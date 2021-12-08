@@ -1,20 +1,35 @@
 import { ThemeContext } from "../../context/themeContext/ThemeContext";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 
 const MainText = () => {
 
+    const [text,setText] = useState(true)
+    const { toggle } = useContext(ThemeContext)
+
+
     useEffect(() => {
         AOS.init()
     }, []);
 
-
-    const { toggle } = useContext(ThemeContext)
+    useEffect(() => {
+        const intervalID = setTimeout(() =>  {
+            setText((text) => !text)
+        }, 2500);
+    
+        return () => clearInterval(intervalID);
+    }, [text]);
+    
 
     return (
             <div className={toggle ? "mainTextContainer" : "mainTextContainer__isDark"}>
-                <h1 data-aos="zoom-in" data-aos-duration="3000">Hola, soy Santiago Vittor!</h1>
+                <h1 data-aos="zoom-in" data-aos-duration="1500">
+                Hola, soy 
+                </h1>
+                <h1 data-aos="zoom-out" data-aos-duration="1500">
+                {text?  'Santiago Vittor' :  'Desarrollador frontEnd'}
+                </h1>
             </div>
     );
 }

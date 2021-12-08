@@ -24,7 +24,7 @@ const ContactForm = () => {
 
     return (  
         
-        <div className="contactContainer__form" data-aos="flip-left">
+        <div className="contactContainer__form" data-aos="fade-down">
                         <h1>CONTACTO</h1>
                         <hr/>
                         <SocialMedia />
@@ -105,20 +105,19 @@ const ContactForm = () => {
                 >
                     {({ errors, isValid }) => ( 
                     <Form>
-                    <div className="inputContainer__each">
+                    <div className={toggle? "inputContainer__each" : "inputContainer__each--isDark"}>
                                 <label htmlFor="nombre">Nombre </label>
                                 <Field
                                     type="text"
                                     name="nombre"
                                     id="nombre"
-                                    autofocus={true}
                                 />
                             </div>
                             <ErrorMessage name="nombre" component={() => (
                                 <div className="inputContainer__each--error">{errors.nombre}</div>
                             )} />
 
-                            <div className="inputContainer__each">
+                            <div className={toggle? "inputContainer__each" : "inputContainer__each--isDark"}>
                                 <label htmlFor="correo">Mail</label>
                                 <Field
                                     type="email"
@@ -129,7 +128,7 @@ const ContactForm = () => {
                             <ErrorMessage name="correo" component={() => (
                                 <div className="inputContainer__each--error">{errors.correo}</div>
                             )} />
-                            <div className="inputContainer__each">
+                            <div className={toggle? "inputContainer__each" : "inputContainer__each--isDark"}>
                                 <label htmlFor="celular">Celular</label>
                                 <Field
                                     type="text"
@@ -140,7 +139,7 @@ const ContactForm = () => {
                             <ErrorMessage name="celular" component={() => (
                                 <div className="inputContainer__each--error">{errors.celular}</div>
                             )} />
-                            <div className="inputContainer__each">
+                            <div className={toggle? "inputContainer__each" : "inputContainer__each--isDark"}>
                                 <label htmlFor="Description">Mensaje</label>
                                 <Field
                                     type="textarea"

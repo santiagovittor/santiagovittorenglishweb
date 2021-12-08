@@ -23,8 +23,8 @@
 
 .mainTextContainer {
     display: grid;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr;
+    place-content: center;
     text-transform: uppercase;
     text-align: center;
     transition: 2s;
@@ -56,7 +56,13 @@
     }
     .mainTextContainer,
     .mainTextContainer__isDark {
-        margin-top: -10rem;
+        margin-top: -15rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-content: center;
         grid-area: then;
+        & h1{
+            font-size: 2.5rem;
+        }
     }
 }
