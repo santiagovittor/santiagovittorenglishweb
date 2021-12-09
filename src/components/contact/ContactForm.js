@@ -26,9 +26,7 @@ const ContactForm = () => {
         
         <div className="contactContainer__form" data-aos="fade-down">
                         <h1>CONTACTO</h1>
-                        <hr/>
                         <SocialMedia />
-                        <hr/>
             <h4>
                 Si desea contactarme para colaborar en un proyecto o por alguna otra razón puede ponerse en contacto completando el formulario
             </h4>
@@ -151,7 +149,7 @@ const ContactForm = () => {
                             <ErrorMessage name="mensaje" component={() => (
                                 <div className="inputContainer__each--error">{errors.mensaje}</div>
                             )} />
-                            {isValid? (<button className={toggle?"inputContainer__buttonIsDark":"inputContainer__button"} type="submit">Enviar mail</button>) : (<button className={toggle? "inputContainer__button--disabled": "inputContainer__buttonIsDark--disabled"} type="submit" >Enviar mensaje</button>)}
+                            {isValid? (<button className={toggle?"inputContainer__buttonIsDark":"inputContainer__button"} type="submit">Enviar mensaje</button>) : (<button className={toggle? "inputContainer__button--disabled": "inputContainer__buttonIsDark--disabled"} type="submit" >Enviar mensaje</button>)}
                             {sentForm ?
                                 <div className="inputContainer__successAlert">Recibí tu mensaje con éxito con el código {messageId}!</div>
                                 :

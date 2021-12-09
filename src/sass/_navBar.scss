@@ -1,7 +1,10 @@
+$black: #18191A;
+
+
 .navBarContainer {
     display: grid;
     height: 100%;
-    color: rgb(24, 24, 24);
+    color: $black;
     grid-template-columns: 1fr;
     transition: 2s;
     & ul {
@@ -24,6 +27,7 @@
         }
         & #lightBulb {
             transform: rotate(180deg);
+            cursor: pointer;
         }
     }
     &__isDark {
@@ -38,6 +42,10 @@
             justify-content: center;
             text-align: center;
             padding-top: 3rem;
+            & #lightBulb {
+                cursor: pointer;
+            }
+        
         }
         & li {
             height: 2rem;
@@ -53,6 +61,7 @@
             }
         }
     }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -79,7 +88,7 @@
             height: 12vh;
             position: sticky;
             top: 10px;
-            background-color: rgb(24, 24, 24);
+            background-color: $black;
             padding: 0;
             & ul {
                 display: flex;

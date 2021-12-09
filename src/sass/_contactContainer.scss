@@ -2,20 +2,14 @@
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    color: #181818;
+    color: $black;
     background-color: white;
     justify-content: center;
     transition: 2s;
     & button{
         margin-top: 2rem;
     }
-    & hr{
-        color: #9e9e9e;
-        opacity: 0.5;
-        width: 75%;
-        height: 1px;
-    }
-    &__form{
+        &__form{
         display: grid;
         padding: 3rem;
         margin-left: auto;
@@ -25,21 +19,25 @@
         text-align: center;
         & h1{
             font-size: 3rem;
+            padding: 0 0 2rem 0;
         }
         & h4{
             font-size:1.5rem;
-            font-weight: 400;
+            font-weight: 600;
             width: 75%;
+            color: #9e9e9e;
+            text-transform: uppercase;
             display: grid;
             margin-left: auto;
             margin-right: auto;
+            padding: 2rem 0 2rem 0;
         }
     } 
     &__isDark{  
     display: grid;
     grid-template-columns: 1fr;
     color: white;
-    background-color: #181818;
+    background-color: $black;
     width: 100%;
     min-height: 100vh;
     justify-content: center;
@@ -48,11 +46,6 @@
         margin-top: 2rem;
     }
 
-    & hr{
-        color: #9e9e9e;
-        opacity: 0.5;
-        width: 75%;
-    }
 
     &__form{
         display: grid;
@@ -76,16 +69,19 @@
 .inputContainer{
     display: grid;
     justify-content: center;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
+    border-top: 1px solid #9e9e9e;
+    padding:2rem 0 2rem 0;
     &__each {
             & input {
                 margin-left: 2vh;
                 border: none;
+                background-color: transparent;
                 border-bottom: 0.5vh solid rgb(158, 158, 158);
                 &:focus {
                     outline: none;
-                    border-bottom: 0.5vh solid #181818;
+                    border-bottom: 0.5vh solid $black;
                     transition: 0.2s;
                 }                   
             }
@@ -121,13 +117,14 @@
         }
         &__button {
             border: none;
-            color: #181818;
+            color: $black;
             background-color: white;
             border-radius: 1vh;
             height: 2rem;
             width: 100%;
             font-size: 1.25rem;
             cursor: pointer;
+            transition: 2s;
             &:hover {
                 filter: saturate(2);
                 transition: 0.5s;
@@ -135,7 +132,8 @@
             &--disabled {
                 border: none;
                 color: white;
-                background-color: #181818;
+                background-color: transparent;
+                color: $black;
                 border-radius: 1vh;
                 font-size: 1.25rem;
                 height: 3rem;
@@ -148,20 +146,21 @@
         &__buttonIsDark {
             border: none;
             color: white;
-            background-color: #181818;
+            background-color: $black;
             border-radius: 1vh;
             height: 2rem;
             width: 100%;
             font-size: 1.25rem;
             cursor: pointer;
+            transition: 2s;
             &:hover {
-                filter: saturate(2);
+                transform: scale(1.01);
                 transition: 0.5s;
             }
             &--disabled {
                 border: none;
-                color: #181818;
-                background-color: white;
+                color: white;
+                background-color: transparent;
                 border-radius: 1vh;
                 font-size: 1.25rem;
                 height: 3rem;

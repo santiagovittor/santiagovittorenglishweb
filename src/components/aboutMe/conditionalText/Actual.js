@@ -13,7 +13,7 @@ const ActualText = () => {
     return ( 
 
         <>
-            <p data-aos="fade-right">Mi nombre es Santiago Vittor, tengo 28 años y soy desarrollador front end.</p>
+            <p data-aos="fade-right">Mi nombre es Santiago Vittor, tengo 28 años y soy desarrollador frontend.</p>
             <p data-aos="fade-right">Actualmente me encuentro promediando la carrera de desarrollo full-stack en Coderhouse, finalicé el curso de ReactJs y estoy próximo a iniciar el módulo de programación backend, en el que aprenderé a desenvolverme con tecnologías como mongoDB, Express y NodeJs.</p>
             <p>Puede descargar mi curriculum desde este enlace <span id="cv"><a href={CV}>CV (539kb)</a></span></p>
         </>
