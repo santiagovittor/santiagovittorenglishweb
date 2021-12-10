@@ -48,16 +48,19 @@ const DigitalKikiPage = () => {
                         :
                         <>
                             <li>
-                                ReactJS: Function based components / Hooks: useState, useEffect, useContext
+                                ReactJS: funcion based components with react hooks use.
                             </li>
                             <li>
-                                Firebase: authentification y firestore
+                                Firebase: authentification y firestore.
                             </li>
                             <li>
-                                Version control management: git/github
+                                Version control management: git/github.
                             </li>
                             <li>
-                                Deployment realizado en Vercel
+                                Estilo desarrollado integramente con CSS puro.
+                            </li>
+                            <li>
+                                Deployment realizado en Vercel.
                             </li>
                         </>}
                 </div>

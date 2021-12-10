@@ -110,7 +110,7 @@ $black: #18191A;
     }
     .mainTextContainer,
     .mainTextContainer__isDark {
-        margin-top: -15rem;
+        margin-top: -20rem;
         display: grid;
         overflow-y: hidden;
         overflow-x: hidden;
@@ -119,7 +119,7 @@ $black: #18191A;
         grid-area: then;
 
         & h1{
-            font-size: 1.75rem;
+            font-size: 1.7rem;
         }
     }
     .cornerGithubContainer{

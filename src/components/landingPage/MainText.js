@@ -6,8 +6,8 @@ import CornerGithub from "../cornerGithub/CornerGithub";
 
 const MainText = () => {
 
-    const [text,setText] = useState(true)
-    const { toggle } = useContext(ThemeContext)
+    const [text,setText] = useState(true);
+    const { toggle } = useContext(ThemeContext);
 
 
     useEffect(() => {
@@ -22,7 +22,6 @@ const MainText = () => {
         return () => clearInterval(intervalID);
     }, [text]);
     
-
     return (
             <div className={toggle ? "mainTextContainer" : "mainTextContainer__isDark"}>
                 <CornerGithub/>
@@ -30,7 +29,7 @@ const MainText = () => {
                 Hola, soy 
                 </h1>
                 <h1 data-aos="zoom-out" data-aos-duration="1500">
-                {text?  'Santiago Vittor' :  'Desarrollador frontEnd'}
+                {text? 'Santiago Vittor' :  'Desarrollador frontEnd'}
                 </h1>
             </div>
     );

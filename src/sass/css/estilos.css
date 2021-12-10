@@ -163,7 +163,7 @@ table {
   }
   .mainTextContainer,
   .mainTextContainer__isDark {
-    margin-top: -15rem;
+    margin-top: -20rem;
     display: grid;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -173,7 +173,7 @@ table {
   }
   .mainTextContainer h1,
   .mainTextContainer__isDark h1 {
-    font-size: 1.75rem;
+    font-size: 1.7rem;
   }
   .cornerGithubContainer {
     display: none;
@@ -188,6 +188,8 @@ table {
   height: 100%;
   color: #18191A;
   grid-template-columns: 1fr;
+  right: 50px;
+  position: fixed;
   transition: 2s;
 }
 
@@ -223,7 +225,8 @@ table {
   display: grid;
   height: 100%;
   color: white;
-  position: sticky;
+  right: 50px;
+  position: fixed;
   grid-template-columns: 1fr;
   transition: 2s;
 }
@@ -424,7 +427,7 @@ table {
   }
   .profileCardContainer li {
     list-style: none;
-    padding: 0 2rem;
+    padding: .5rem 2rem;
   }
   .profileCardContainer p {
     padding: 0 1.5rem 1.5rem 1.5rem;

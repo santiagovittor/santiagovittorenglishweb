@@ -6,6 +6,8 @@ $black: #18191A;
     height: 100%;
     color: $black;
     grid-template-columns: 1fr;
+    right: 50px;
+    position: fixed;
     transition: 2s;
     & ul {
         display: grid;
@@ -34,8 +36,9 @@ $black: #18191A;
         display: grid;
         height: 100%;
         color: white;
-        position: sticky;
-        grid-template-columns: 1fr;
+        right: 50px;
+        position: fixed;
+            grid-template-columns: 1fr;
         transition: 2s;
         & ul {
             display: grid;

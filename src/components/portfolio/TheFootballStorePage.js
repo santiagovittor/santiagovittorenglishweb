@@ -57,6 +57,9 @@ const TheFootballStorePage = () => {
                                 Version control management: git/github
                             </li>
                             <li>
+                                Híbrido de CSS puro y bootstrap para el estilo.
+                            </li>
+                            <li>
                                 Deployment realizado en Vercel
                             </li>
                         </>}
