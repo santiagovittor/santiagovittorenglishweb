@@ -9,7 +9,7 @@ const SocialMedia = () => {
         
         <section className="socialMediaContainer">
             <div className="socialMediaContainer__each">
-                <a target="blank" href="https://www.linkedin.com/in/santiago-vittor-862033107/"> 
+                <a target="blank" href="https://www.linkedin.com/in/santiago-vittor/"> 
                 <img src={linkedin} alt="linkedin icon" />
                 </a>
             </div>
