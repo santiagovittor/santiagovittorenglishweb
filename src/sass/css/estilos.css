@@ -627,6 +627,10 @@ table {
   padding: 2rem 0 2rem 0;
 }
 
+.inputContainer__successAlert {
+  color: green;
+}
+
 .inputContainer__each input {
   margin-left: 2vh;
   border: none;
