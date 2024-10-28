@@ -1,6 +1,23 @@
-# Santiago Vittor personal web 🧍
+# Santiago Vittor - Portfolio
 
-Este es el repositorio que contiene el código que compone mi sitio web personal. Mi nombre es Santiago Vittor.
-Inicié el recorrido de aprendizaje de desarrollo web a principios del año 2021, en este sitio enumero los proyectos realizados al día de la fecha
+Welcome to the repository for my personal portfolio website! This project showcases my background, skills, and a selection of web development projects I've built.
 
-## TO BE CONTINUED 🛠...
+## 🌐 [Visit My Live Portfolio](https://santiagovittor.vercel.app/)
+
+### About This Portfolio
+This website is designed to:
+- Introduce who I am and share my journey in tech and leadership.
+- Highlight projects that demonstrate my skills in frontend development, particularly with **React**.
+- Provide a comprehensive overview of my experience in roles like **Squad Leader** and **Quality Assurance** reviewer.
+
+### Technologies Used
+- **React** for interactive UI components
+- **HTML/CSS** for responsive, accessible design
+- **JavaScript** for functionality and logic
+
+### Contact
+Feel free to explore the code, suggest improvements, or reach out if you have any feedback or collaboration ideas!
+
+---
+
+Thank you for visiting, and I hope you enjoy exploring my portfolio!
