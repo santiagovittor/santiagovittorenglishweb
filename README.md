@@ -2,7 +2,7 @@
 
 Welcome to the repository for my personal portfolio website! This project showcases my background, skills, and a selection of web development projects I've built.
 
-## 🌐 [Visit My Live Portfolio](https://santiagovittor.vercel.app/)
+## 🌐 [Visit My Live Portfolio](https://santivittor.vercel.app/)
 
 ### About This Portfolio
 This website is designed to:
