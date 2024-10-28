@@ -28,42 +28,42 @@ const ContactForm = () => {
                         <h1>CONTACTO</h1>
                         <SocialMedia />
             <h4>
-                Si desea contactarme para colaborar en un proyecto o por alguna otra razón puede ponerse en contacto completando el formulario
+            If you would like to contact me to collaborate on a project or for any other reason, please reach out by completing the form
             </h4>
             <div className="inputContainer">
             <Formik
                 validateOnMount
                 initialValues={{
-                    nombre: '',
-                    celular: '',
-                    correo: '',
-                    mensaje:''
+                    name: '',
+                    phone: '',
+                    mail: '',
+                    message:''
                 }}
                 validate={(valores) => {
                     let errores = {}
                     if (!valores.nombre) {
-                        errores.nombre = 'Por favor ingresa un nombre.'
+                        errores.nombre = 'Please add a name.'
                     }
                     else if (!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(valores.nombre)) {
-                        errores.nombre = 'El nombre solo puede contener letras y espacios.'
+                        errores.nombre = 'Name can only contain letters and spaces.'
                     }
 
                     if (!valores.correo) {
-                        errores.correo = ' Por favor ingresa un correo electrónico.'
+                        errores.correo = ' Please add an e-mail.'
                     }
                     else if (!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(valores.correo)) {
-                        errores.correo = 'El correo solo puede contener letras, números, puntos, guiones y guión bajo.'
+                        errores.correo = 'E-mail can only contain letters, numbers, dots and slashes.'
                     }
 
                     if (!valores.celular) {
-                        errores.celular = 'Por favor ingresa un celular.'
+                        errores.celular = 'Please add a cell phone.'
                     }
                     else if (!/^\(?(\d{3})\)?[-]?(\d{3})[-]?(\d{4})$/.test(valores.celular)) {
-                        errores.celular = 'Ingresa un celular válido.'
+                        errores.celular = 'Please add a valid cell phone.'
                     }
 
                     if (!valores.mensaje) {
-                        errores.mensaje = 'Por favor escribe tu mensaje.'
+                        errores.mensaje = 'Please write a message.'
                     }
                    
 
@@ -92,7 +92,7 @@ const ContactForm = () => {
                       setSentForm(true)
                       }
                       catch (error){
-                        console.error("Error enviando el documento: " + error)
+                        console.error("Error sending the document: " + error)
                       }
                   }
                   resetForm()
@@ -104,7 +104,7 @@ const ContactForm = () => {
                     {({ errors, isValid }) => ( 
                     <Form>
                     <div className={toggle? "inputContainer__each" : "inputContainer__each--isDark"}>
-                                <label htmlFor="nombre">Nombre </label>
+                                <label htmlFor="nombre">Name </label>
                                 <Field
                                     type="text"
                                     name="nombre"
@@ -127,7 +127,7 @@ const ContactForm = () => {
                                 <div className="inputContainer__each--error">{errors.correo}</div>
                             )} />
                             <div className={toggle? "inputContainer__each" : "inputContainer__each--isDark"}>
-                                <label htmlFor="celular">Celular</label>
+                                <label htmlFor="celular">Phone</label>
                                 <Field
                                     type="text"
                                     name="celular"
@@ -138,7 +138,7 @@ const ContactForm = () => {
                                 <div className="inputContainer__each--error">{errors.celular}</div>
                             )} />
                             <div className={toggle? "inputContainer__each" : "inputContainer__each--isDark"}>
-                                <label htmlFor="Description">Mensaje</label>
+                                <label htmlFor="Description">Message</label>
                                 <Field
                                     type="textarea"
                                     name="mensaje"
@@ -151,7 +151,7 @@ const ContactForm = () => {
                             )} />
                             {isValid? (<button className={toggle?"inputContainer__buttonIsDark":"inputContainer__button"} type="submit">Enviar mensaje</button>) : (<button className={toggle? "inputContainer__button--disabled": "inputContainer__buttonIsDark--disabled"} type="submit" >Enviar mensaje</button>)}
                             {sentForm ?
-                                <div className="inputContainer__successAlert">Recibí tu mensaje con éxito con el código {messageId}!</div>
+                                <div className="inputContainer__successAlert">I succesfully received your message with ID {messageId}!</div>
                                 :
                                 <>
                                 </>

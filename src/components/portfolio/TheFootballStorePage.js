@@ -38,12 +38,12 @@ const TheFootballStorePage = () => {
             <div className="profileCardContainer__text">
                 <div className={!toggle ? "profileCardContainer__text--menu" : "profileCardContainer__text--menuIsDark"}>
                     <ul>
-                        <li onClick={handleActual} id={isActualActive ? "isActive" : "notActive"}>Descripción</li>
-                        <li onClick={handleObjetivos} id={isObjetivosActive ? "isActive" : "notActive"}>Tecnologías</li>
+                        <li onClick={handleActual} id={isActualActive ? "isActive" : "notActive"}>Description</li>
+                        <li onClick={handleObjetivos} id={isObjetivosActive ? "isActive" : "notActive"}>Technologies</li>
                     </ul>
                     {textOnDisplay === 1 ?
 
-                        <p>Sitio web creado para el curso de ReactJS de Coderhouse, simulando la existencia de un E-Commerce de venta de camisetas de futbol clásicas</p>
+                        <p>Website created for the ReactJS course at Coderhouse, simulating the existence of an e-commerce for selling classic football jerseys</p>
 
                         :
                         <>
@@ -57,10 +57,10 @@ const TheFootballStorePage = () => {
                                 Version control management: git/github
                             </li>
                             <li>
-                                Híbrido de CSS puro y bootstrap para el estilo.
+                                Pure css.
                             </li>
                             <li>
-                                Deployment realizado en Vercel
+                                Deployment done using Vercel
                             </li>
                         </>}
                 </div>

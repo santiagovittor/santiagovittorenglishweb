@@ -42,8 +42,8 @@ const ProfileCard = () => {
             <div className="profileCardContainer__text">
                 <div className={!toggle? "profileCardContainer__text--menu" : "profileCardContainer__text--menuIsDark"}>
             <ul>
-                <li onClick={handleActual} id={isActualActive?"isActive":"notActive"}>Actualidad</li>
-                <li onClick={handleObjetivos} id={isObjetivosActive?"isActive":"notActive"}>Objetivos</li>
+                <li onClick={handleActual} id={isActualActive?"isActive":"notActive"}>Currently</li>
+                <li onClick={handleObjetivos} id={isObjetivosActive?"isActive":"notActive"}>Goals</li>
             </ul>
             {textOnDisplay===1? <Actual/> : <Objetives/>   }
             </div>

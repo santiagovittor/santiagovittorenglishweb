@@ -12,8 +12,8 @@ const Objetives = () => {
     return ( 
 
         <>
-        <p data-aos="fade-right" >Estoy constantemente en busca de nuevas experiencias y sumando herramientas a mi set de skills.</p>
-        <p data-aos="fade-right">En mi carrera, me motiva seguir creciendo como líder y desarrollador, buscando continuamente perfeccionar mis habilidades en tecnologías emergentes. Mis próximos objetivos incluyen profundizar en arquitectura de software y cloud computing, con el propósito de construir aplicaciones aún más robustas y eficientes. Valoro el trabajo en equipo, la curiosidad por aprender, y me comprometo con la calidad en cada proyecto, siendo siempre fiel a mis principios de responsabilidad y lealtad</p>
+        <p data-aos="fade-right" >My primary goal is to continuously evolve as a frontend developer, building intuitive and impactful web applications that enhance user experience. I’m currently deepening my knowledge in Information Systems at Universidad Kennedy, set to complete in 2026, and I'm passionate about applying this education to create solutions that bridge technology and user needs.</p>
+        <p data-aos="fade-right">As I move forward, I look forward to connecting with international teams, expanding my technical toolkit, and making a meaningful impact in the tech industry.</p>
         </>
 
      );

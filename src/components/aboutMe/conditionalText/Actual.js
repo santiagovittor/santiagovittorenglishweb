@@ -1,7 +1,7 @@
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-import CV from '../../../assets/pdfs/santiagoVittorResume2024.pdf'
+import CV from '../../../assets/pdfs/SantiagoVittor2024Resume.pdf'
 
 
 const ActualText = () => {
@@ -13,9 +13,9 @@ const ActualText = () => {
     return ( 
 
         <>
-            <p data-aos="fade-right">Mi nombre es Santiago Vittor, tengo 31 años y soy desarrollador frontend especializado en React.</p>
-            <p data-aos="fade-right">Actualmente estoy cursando la Tecnicatura en Sistemas de información con orientación en Desarrollo de Videojuegos en la Universidad Kennedy. También me desempeño como Squad Leader y DRQQA en la empresa FoodStyles. Me especializo en el desarrollo web con React, con un enfoque en la creación de soluciones eficientes y escalables. Como squad leader en Foodstyles, lidero equipos hacia la optimización de procesos y la entrega de productos de alta calidad, siempre manteniendo una colaboración fluida y enfocada en resultados.</p>
-            <p>Puede descargar mi curriculum desde este enlace <span  id="cv"><a href={CV}>CV (159KB)</a></span></p>
+            <p data-aos="fade-right">My name is Santiago Vittor, I am 31 years old, and I am a frontend developer specialized in React.</p>
+            <p data-aos="fade-right">I am currently pursuing a Technical Degree in Information Systems with a specialization in Game Development at Universidad Kennedy. I also work as a Squad Leader and DRQQA at FoodStyles. My expertise lies in web development with React, focusing on creating efficient and scalable solutions. As a squad leader at FoodStyles, I lead teams toward process optimization and the delivery of high-quality products, always maintaining smooth and results-oriented collaboration</p>
+            <p>You can download my latest resume from this link: <span  id="cv"><a href={CV}>Resume (159KB)</a></span></p>
         </>
 
      );

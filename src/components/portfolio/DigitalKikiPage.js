@@ -43,7 +43,7 @@ const DigitalKikiPage = () => {
                     </ul>
                     {textOnDisplay === 1 ?
 
-                        <p>Sitio web creado para agencia de marketing digital en proceso de lanzamiento.</p>
+                        <p>Sitio web created for a marketing agency yet to be launched.</p>
 
                         :
                         <>
@@ -51,16 +51,16 @@ const DigitalKikiPage = () => {
                                 ReactJS: funcion based components with react hooks use.
                             </li>
                             <li>
-                                Firebase: authentification y firestore.
+                                Firebase: authentification and firestore.
                             </li>
                             <li>
                                 Version control management: git/github.
                             </li>
                             <li>
-                                Estilo desarrollado integramente con CSS puro.
+                                Styles done using pure CSS.
                             </li>
                             <li>
-                                Deployment realizado en Vercel.
+                                Deployment done using Vercel.
                             </li>
                         </>}
                 </div>
