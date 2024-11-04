@@ -25,7 +25,7 @@ const ContactForm = () => {
     return (  
         
         <div className="contactContainer__form" data-aos="fade-down">
-                        <h1>Contact</h1>
+                        <h1>CONTACT ME</h1>
                         <SocialMedia />
             <h4>
             If you would like to contact me to collaborate on a project or for any other reason, please reach out by completing the form
