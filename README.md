@@ -14,6 +14,7 @@ This website is designed to:
 - **React** for interactive UI components
 - **HTML/CSS** for responsive, accessible design
 - **JavaScript** for functionality and logic
+- **Firebase** for form storage
 
 ### Contact
 Feel free to explore the code, suggest improvements, or reach out if you have any feedback or collaboration ideas!

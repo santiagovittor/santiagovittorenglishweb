@@ -18,7 +18,7 @@ const ContactForm = () => {
     },[])
     
     const { toggle } = useContext(ThemeContext);
-    const colRef = collection(db, 'mensajes')   
+    const colRef = collection(db, 'messages')   
 
 
 
@@ -73,6 +73,7 @@ const ContactForm = () => {
 
                     let date = new Date();
                     let currentDate = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear() + ' ' + date.getHours() + ':' + date.getMinutes();
+                    let websiteOrigin = 'english-version'
 
                     const selfGeneratedMessage = {
                         client: {
@@ -82,6 +83,7 @@ const ContactForm = () => {
                             message: valores.mensaje
                         },
                         date: currentDate,
+                        sentFrom: websiteOrigin
                     };
 
 
